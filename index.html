@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="feedback_form.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="feedback_form.js"></script>
+</head>
+<body>
+
+
+<div class="box">
+    <h3>Feedback Form</h3>
+    <div class="container">
+        <form action="">
+      
+        <div class="fname">
+            <label  for="fname">First Name</label>
+            <input required type="text" class="input" id="fname" name="firstname" placeholder="Your First name..">
+            <h5 id="error_fname" style="color: red;" > </h5> 
+        </div>
+
+        <div class="mname">
+            <label  for="mname">Middle Name</label>
+            <input required type="text" class="input" id="mname" name="middlename" placeholder="Your middle name..">  
+            <h5 id="error_mname" style="color: red;" > </h5> 
+        </div>
+
+        <div class="lname">
+            <label  for="lname">Last Name</label>
+            <input required type="text" class="input" id="lname" name="lastname" placeholder="Your last name..">  
+            <h5 id="error_lname" style="color: red;" > </h5> 
+        </div>
+
+        <div class="mobile">
+            <label  for="mobile">Mobile Number</label>
+            <input required type="text" class="input" name="mobile" id="mobile" placeholder="Enter Mobile Number">  
+            <h5 id="error_mobile" style="color: red;" > </h5> 
+        </div>
+
+        <div class="email">
+            <label  for="email">E-Mail</label>
+            <input required  type="email" class="input" name="email" id="email" placeholder="Enter your Email">
+            <h5 id="error_email" style="color: red;" > </h5> 
+        </div>
+
+        <div class="password">
+            <label  for="password">Password</label>
+            <input required type="password" class="input" name="password" id="password" placeholder="Enter password">  
+            <h5 id="error_password" style="color: red;" > </h5> 
+        </div>
+
+        <div class="pincode">
+            <label  for="pincode">Pin Code</label>
+            <input required type="text" class="input" name="pincode" id="pincode" placeholder="Enter Pincode eg.411043">
+            <h5 id="error_pincode" style="color: red;" > </h5> 
+        </div>
+
+        <div class="gender">
+            <label  for="gender">Gender</label> <br>
+            <input required type="radio" id="male" name="gender" value="male">
+            <label  for="male">Male</label><br>
+            <input required type="radio" id="female" name="gender" value="female">
+            <label  for="female">Female</label><br>
+            <input required type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label> <br><br>
+            <h5 id="error_gender" style="color: red;" > </h5> 
+        </div>
+
+
+        <div class="country">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india" selected>India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <h5 id="error_country" style="color: red;" > </h5> 
+        </div>
+
+        <div class="subject" >
+            <label for="subject">Subject</label>
+            <textarea required id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <h5 id="erorr_subject" style="color: red;" > </h5> 
+        </div>
+
+           <input type="submit" value="Submit">
+
+        </form>
+      </div>
+</div>
+
+</body>
+</html>
